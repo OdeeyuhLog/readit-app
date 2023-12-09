@@ -1,3 +1,5 @@
+"use client";
+
 import { User } from "next-auth";
 import { FC } from "react";
 import {
