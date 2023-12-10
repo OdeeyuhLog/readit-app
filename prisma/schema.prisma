@@ -85,7 +85,7 @@ model Post {
   content         Json?
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt
-  Organization    Organization? @relation(fields: [orgId], references: [id])
+  Organization    Organization @relation(fields: [orgId], references: [id])
   orgId           String
 
   author User     @relation(fields: [authorId], references: [id] )
